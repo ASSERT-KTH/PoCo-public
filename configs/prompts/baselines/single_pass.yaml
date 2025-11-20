@@ -1,0 +1,32 @@
+prompts:
+  poc_generation: |
+    Create a PoC for the vulnerability in the following contract.
+   
+    Contract Code:
+    ```solidity
+    {contract_code}
+    ```
+
+    Contract Information:
+    - Contract File: {contract_relative_path}
+
+    Vulnerability Description:
+    {annotations}
+
+
+    Please generate a complete Foundry test file that includes:
+
+    1. **Test Contract**: Write comprehensive test cases that demonstrate the exploit
+    2. **Setup**: Proper test setup with necessary imports and configurations
+    3. **Exploit Logic**: Clear step-by-step exploit demonstration
+    4. **Assertions**: Verify that the exploit succeeds and shows the vulnerability
+
+    Requirements:
+    - Use the Foundry test framework (forge test) with the correct Solidity version pragma at the top of the file (as in the original contract)
+    - **IMPORTANT**: Use accurate import statements based on the contract's location. The contract is located at `{contract_relative_path}` relative to the project root. Calculate the correct relative path from the test file location (`{exploit_test_relative_path} relative to the root`) to the contract file.
+    - Make the exploit clear: Include comments explaining each step
+    - Ensure the test can be run with `forge test`
+
+    Generate the complete test file as a single Solidity file.
+    
+    **IMPORTANT**: Return ONLY the raw Solidity code without any markdown formatting, code blocks, or backticks. Do not wrap the code in ```solidity or any other markdown syntax. The output should be directly executable Solidity code.

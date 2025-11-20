@@ -1,0 +1,105 @@
+prompts:
+  vulnerability_analysis: |
+    Analyze the vulnerability in the following Solidity contract and provide a clear understanding of the issue.
+
+    Contract Code:
+    {contract_code}
+
+    Vulnerability Description:
+    {annotations}
+
+    Contract Path: {contract_relative_path}
+
+    Please provide:
+    1. A clear explanation of the vulnerability
+    2. How the vulnerability can be exploited
+    3. The conditions required for exploitation
+    4. Expected outcome of a successful exploit
+
+    Focus on understanding the root cause and mechanism of the vulnerability.
+
+  poc_generation_initial: |
+    Based on the vulnerability analysis, generate a comprehensive Proof of Concept (PoC) test that demonstrates the vulnerability.
+
+    Vulnerability Analysis:
+    {vulnerability_analysis}
+
+    Contract Code:
+    {contract_code}
+
+    Vulnerability Description:
+    {annotations}
+
+    Contract Path: {contract_relative_path}
+
+    Requirements:
+    - Create a Solidity test file that demonstrates the vulnerability
+    - Use the Foundry test framework (forge test)
+    - Include proper pragma declaration matching the original contract
+    - Write clear test cases that show the vulnerability in action
+    - Include setup, exploit execution, and verification steps
+    - Ensure the test can be run with `forge test {exploit_test_relative_path} to the root -vv`
+    - Do NOT modify the original contract code
+    - Focus ONLY on the described vulnerability
+
+    Generate the complete test file as executable Solidity code ready to write directly to disk without markdown formatting.
+     Calculate the correct relative path from the test file location (`{exploit_test_relative_path} relative to the root`) to the contract file.
+    Return ONLY the raw Solidity code, no additional text or comments.
+
+  poc_generation_compile_fix: |
+    The previous POC test failed to compile. Please fix the compilation errors and regenerate the test.
+
+    Previous Attempt:
+    {previous_poc}
+
+    Compilation Errors:
+    {compile_errors}
+
+    Vulnerability Analysis:
+    {vulnerability_analysis}
+
+    Contract Code:
+    {contract_code}
+
+    Vulnerability Description:
+    {annotations}
+
+    Contract Path: {contract_relative_path}
+
+    Please fix the compilation issues and generate a corrected test file. Focus on:
+    - Fixing import statements and dependencies
+    - Correcting Solidity syntax errors
+    - Ensuring proper contract instantiation
+    - Using correct function signatures and data types
+    - Matching the Solidity version pragma
+
+    Generate the corrected test file as executable Solidity code ready to write directly to disk without markdown formatting.
+
+  poc_generation_test_fix: |
+    The POC test compiled successfully but failed during execution. Please fix the test logic and regenerate.
+
+    Previous Attempt:
+    {previous_poc}
+
+    Test Execution Errors:
+    {test_errors}
+
+    Vulnerability Analysis:
+    {vulnerability_analysis}
+
+    Contract Code:
+    {contract_code}
+
+    Vulnerability Description:
+    {annotations}
+
+    Contract Path: {contract_relative_path}
+
+    Please fix the test execution issues and generate a corrected test file. Focus on:
+    - Correcting test logic and assertions
+    - Fixing contract setup and initialization
+    - Ensuring proper exploit execution flow
+    - Using correct function parameters and values
+    - Verifying the vulnerability demonstration is accurate
+
+    Generate the corrected test file as executable Solidity code ready to write directly to disk without markdown formatting.
