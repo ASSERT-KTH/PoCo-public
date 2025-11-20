@@ -1,0 +1,10 @@
+name: "eval_poco_o3"
+description: "Run eval sweep with poco and OpenAI o3"
+
+sweep:
+  model.name: ["o3"]
+  model.temperature: [0.0]
+
+execution:
+  mode: "poco"
+  dataset: "evaluation"

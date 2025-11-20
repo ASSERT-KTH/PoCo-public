@@ -1,0 +1,10 @@
+name: "eval_poco_sonnet_4.5"
+description: "Run eval sweep with poco and Claude Sonnet 4.5"
+
+sweep:
+  model.name: ["claude-sonnet-4.5"]
+  model.temperature: [0.0]
+
+execution:
+  mode: "poco"
+  dataset: "evaluation"

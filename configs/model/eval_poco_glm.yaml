@@ -1,0 +1,10 @@
+name: "eval_poco_glm_exacto"
+description: "Run eval sweep with poco and glm-4.6:exacto"
+
+sweep:
+  model.name: ["glm-4.6:exacto"]
+  model.temperature: [0.0]
+
+execution:
+  mode: "poco"
+  dataset: "evaluation"
