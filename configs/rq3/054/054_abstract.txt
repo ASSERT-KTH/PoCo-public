@@ -1,0 +1,2 @@
+createVault() function can be tricked to initialize the vault without providing any tokens. When such a vault is initialized, another user can both buy and exercise the option without ever receiving any funds. So it can cause a loss of funds.
+

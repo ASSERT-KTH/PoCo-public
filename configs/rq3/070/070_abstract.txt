@@ -1,0 +1,2 @@
+The pausing mechanism of PhiNFT1155 contract is implemented incorrectly and doesn't work. Users are still able to transfer NFTs in paused state.
+

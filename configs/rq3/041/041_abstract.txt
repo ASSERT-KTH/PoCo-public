@@ -1,0 +1,2 @@
+An attacker can create an auction right after an honest user and take over their auction, allowing them to steal funds in the case of a prefunded auction.
+

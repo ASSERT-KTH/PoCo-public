@@ -1,0 +1,2 @@
+Royalty fee calculation has a serious flaw in buy(...). Caviar's private pools could be completely drained.
+

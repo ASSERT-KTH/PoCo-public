@@ -1,0 +1,1 @@
+The Vault.mintYieldFee function allows the caller to set the _recipient. Anyone can steal the available yield fee from the vault by minting shares to their own address.

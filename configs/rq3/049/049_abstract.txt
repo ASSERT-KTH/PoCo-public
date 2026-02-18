@@ -1,0 +1,1 @@
+A lender is able to call provideNewTermsForRoll with whatever terms they wish. Borrower will be forced to payback the loan at unfavourable terms or forfeit their collateral.

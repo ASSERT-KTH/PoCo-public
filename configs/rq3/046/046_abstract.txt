@@ -1,0 +1,1 @@
+The CVXStaker contract doesn't check for zero amount while transferring rewards, which can end up blocking the operation.

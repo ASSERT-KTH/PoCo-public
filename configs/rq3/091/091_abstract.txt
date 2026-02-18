@@ -1,0 +1,2 @@
+The shift() and sync() functions provide an opportunity for any user to manipulate the reserves. The Pumps (oracles) can be manipulated. This can affect any contract/protocol that utilizes Pumps as on-chain oracles.
+

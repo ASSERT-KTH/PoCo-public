@@ -1,0 +1,70 @@
+Royalty fee calculation has a serious flaw in buy(...). Caviar's private pools could be completely drained.
+
+In the Caviar private pool, NFT royalties are being paid from the msg.sender to the NFT royalty receiver of each token in PrivatePool.buy and PrivatePool.sell:
+
+https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol#L271-L285
+
+        #buy(uint256[],uint256[],MerkleMultiProof)
+
+271:    if (payRoyalties) {
+            ...
+274:        (uint256 royaltyFee, address recipient) = _getRoyalty(tokenIds[i], salePrice);
+            ...
+278:        if (baseToken != address(0)) {
+279:            ERC20(baseToken).safeTransfer(recipient, royaltyFee);
+280:        } else {
+281:            recipient.safeTransferETH(royaltyFee);
+282:        }
+
+https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol#L328-L352
+
+        #sell(uint256[],uint256[],MerkleMultiProof,IStolenNftOracle.Message[])
+
+329:    for (uint256 i = 0; i < tokenIds.length; i++) {
+            ...
+333:        if (payRoyalties) {
+                ...
+338:            (uint256 royaltyFee, address recipient) = _getRoyalty(tokenIds[i], salePrice);
+                ...
+345:            if (baseToken != address(0)) {
+346:                ERC20(baseToken).safeTransfer(recipient, royaltyFee);
+347:            } else {
+348:                recipient.safeTransferETH(royaltyFee);
+349:            }
+
+In both functions, the amount needed to pay all royalties is taken from the msg.sender who is either the buyer or the seller depending on the context. In PrivatePool.sell, this amount is first paid by the pool and then taken from the msg.sender by simply reducing what they receive in return for the NFTs they are selling. A similar thing is done in PrivatePool.buy, but instead of reducing the output amount, the input amount of base tokens that the msg.sender (buyer) should pay to the pool is increased:
+
+https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol#L251-L252
+
+        #buy(uint256[],uint256[],MerkleMultiProof)
+
+251:    // add the royalty fee amount to the net input aount
+252:    netInputAmount += royaltyFeeAmount;
+
+https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol#L354-L355
+
+        #sell(uint256[],uint256[],MerkleMultiProof,IStolenNftOracle.Message[])
+
+354:    // subtract the royalty fee amount from the net output amount
+355:    netOutputAmount -= royaltyFeeAmount;
+
+The difference between these two functions (that lies at the core of the problem) is that in PrivatePool.buy, the _getRoyalty function is called twice. The first time is to calculate the total amount of royalties to be paid, and the second time is to actually send each royalty fee to each recipient:
+
+https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol#L242-L248
+https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol#L273-L274
+
+        #buy(uint256[],uint256[],MerkleMultiProof)
+
+242:    if (payRoyalties) {
+243:        // get the royalty fee for the NFT
+244:        (uint256 royaltyFee,) = _getRoyalty(tokenIds[i], salePrice); // @audit _getRoyalty called 1st time
+245:
+246:        // add the royalty fee to the total royalty fee amount
+247:        royaltyFeeAmount += royaltyFee;
+248:    }
+        
+        ...
+        
+273:    // get the royalty fee for the NFT
+274:    (uint256 royaltyFee, address recipient) = _getRoyalty(tokenIds[i], salePrice); // @audit  _getRoyalty called 2nd time
+

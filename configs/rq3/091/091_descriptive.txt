@@ -1,0 +1,10 @@
+https://github.com/code-423n4/2023-07-basin/blob/9403cf973e95ef7219622dbbe2a08396af90b64c/src/Well.sol#L352-L377
+https://github.com/code-423n4/2023-07-basin/blob/9403cf973e95ef7219622dbbe2a08396af90b64c/src/Well.sol#L590-L598
+
+The Well contract mandates that the Pumps should be updated with the previous block's reserves in case reserves are changed in the current block to reflect the price change accurately.
+
+However, this doesn't happen in the shift() and sync() functions, providing an opportunity for any user to manipulate the reserves in the current block before updating the Pumps with new manipulated reserves values.
+Impact
+
+The Pumps (oracles) can be manipulated. This can affect any contract/protocol that utilizes Pumps as on-chain oracles.
+

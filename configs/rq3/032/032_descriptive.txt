@@ -1,0 +1,23 @@
+When users withdraw their strike escrowed in Putty contract, Putty will charge a certain amount of fee from the strike amount. The fee will first be sent to the contract owner, and the remaining strike amount will then be sent to the users.
+
+https://github.com/code-423n4/2022-06-putty/blob/3b6b844bc39e897bd0bbb69897f2deff12dc3893/contracts/src/PuttyV2.sol#L500
+function withdraw(Order memory order) public {
+	..SNIP..
+​
+	// transfer strike to owner if put is expired or call is exercised
+	if ((order.isCall && isExercised) || (!order.isCall && !isExercised)) {
+		// send the fee to the admin/DAO if fee is greater than 0%
+		uint256 feeAmount = 0;
+		if (fee > 0) {
+			feeAmount = (order.strike * fee) / 1000;
+			ERC20(order.baseAsset).safeTransfer(owner(), feeAmount);
+		}
+​
+		ERC20(order.baseAsset).safeTransfer(msg.sender, order.strike - feeAmount);
+​
+		return;
+	}
+	..SNIP..
+}
+
+There are two methods on how the owner can deny user from withdrawing their strike amount from the contract

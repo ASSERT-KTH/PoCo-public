@@ -1,0 +1,2 @@
+Claiming deposits using the LiquidityPool.deposit() will cause the Escrow contract to not have enough shares to allow other investors to claim their maxDeposit or maxMint values for their deposited assets.
+

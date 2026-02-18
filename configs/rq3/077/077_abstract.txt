@@ -1,0 +1,2 @@
+There's a way to mint additional fighter NFTs on top of the fighter NFTs you're owed for winning. A malicious user can leverage using a smart contract for engineering a simple reentrancy.
+

@@ -1,0 +1,2 @@
+Private Pools support NFT borrowing using flash loans. The flashFee function returns the value of changeFee without any scaling or modification. This is clearly an incorrect setting of the flash loan fee.
+

@@ -1,0 +1,2 @@
+Deposit and mint under LiquidityPool lack access control, which enables any user to proceed the mint/deposit for another user. Attacker can deposit some wai before users TX to DoS the deposit.
+

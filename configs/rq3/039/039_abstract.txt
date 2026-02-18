@@ -1,0 +1,2 @@
+Seller's funds may remain locked in the protocol, because of revert on 0 transfer tokens. Since the batch auctions must be prefunded so routing.funding shouldn't be zero unless all the tokens were sent in settle, in which case payoutSent will equal sold_. This means it is possible for prefundingRefund to be equal to 0. This means if the routing.baseToken is a revert on 0 transfer token the seller will never be able to get the quoteToken he should get from the auction.
+

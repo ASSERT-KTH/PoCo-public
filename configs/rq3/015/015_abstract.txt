@@ -1,0 +1,2 @@
+The setHooks function in Vault.sol allows users to set arbitrary hooks, potentially enabling them to make external calls with unintended consequences.
+

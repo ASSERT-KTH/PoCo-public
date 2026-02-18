@@ -1,0 +1,2 @@
+Due to round down issue in VaultAdapter's multiplier shift calculation, utilization rate will not increase/decrease if oracle is consulted frequently.
+

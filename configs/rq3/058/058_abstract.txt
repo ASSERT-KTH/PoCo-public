@@ -1,0 +1,2 @@
+fillOrder() and exercise() have code paths that require Ether to be sent to them, and therefore those two functions have the payable modifier. However, there are code paths within those functions that do not require Ether. Ether passed to the functions, when the non-Ether code paths are taken, is locked in the contract forever, and the sender gets nothing extra in return for it.
+

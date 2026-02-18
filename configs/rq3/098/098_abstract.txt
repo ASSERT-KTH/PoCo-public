@@ -1,0 +1,1 @@
+solmate's SafeTransferLib does not check if the token is a contract. An attacker can set traps on multiple potential tokens to steal from future users.

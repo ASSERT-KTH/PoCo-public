@@ -1,0 +1,1 @@
+The PrivatePool.buy and PrivatePool.sell functions intend to distribute royalty amount whenever NFTs are traded. This inconsistency between royalty collection and royalty distribution can cause loss of funds to the traders.
