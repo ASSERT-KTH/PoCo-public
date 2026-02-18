@@ -1,8 +1,8 @@
 <div align="center">
 
-  <h1>PoCo Agent: Experiment Results</h1>
+  <h1>PoCo: Agentic Proof-of-Concept Exploit Generation for Smart Contracts</h1>
   <h3>
-    Agentic Proof-of-Concept Exploit Generation for Smart Contracts
+    Exeperiment Results
   </h3>
 
   <p>
