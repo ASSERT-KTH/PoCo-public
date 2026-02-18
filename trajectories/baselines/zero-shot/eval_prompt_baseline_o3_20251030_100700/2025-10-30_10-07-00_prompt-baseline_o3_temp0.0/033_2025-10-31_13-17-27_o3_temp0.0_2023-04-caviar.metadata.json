@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-10-31T13:17:27Z",
+  "contract_path": "dataset/evaluation/findings/033/2023-04-caviar/src/PrivatePool.sol",
+  "annotations_path": "dataset/evaluation/annotations/033.txt",
+  "model": "o3",
+  "temperature": 0.0,
+  "project_name": "2023-04-caviar",
+  "finding_id": "033",
+  "strategy_type": "prompt-baseline",
+  "success": false,
+  "error_category": "CF",
+  "error_message": "Stub metadata: no trajectory available; evaluation_report provides RQ1 result.",
+  "poc_file_path": "dataset/evaluation/findings/033/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+  "trajectory_file": "033_2025-10-31_13-17-27_o3_temp0.0_2023-04-caviar.trajectory.json"
+}

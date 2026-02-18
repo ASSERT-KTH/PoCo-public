@@ -1,0 +1,222 @@
+{
+  "details": {
+    "aborted_max_attempts": [
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 1480.01237,
+        "finding_id": "008",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_11-16-27_o3_temp0.0_2023-09-centrifuge.metadata.json",
+        "project_name": "2023-09-centrifuge",
+        "total_cost_usd": 0.8985920000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 1122.414373,
+        "finding_id": "009",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_11-41-07_o3_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.7934259999999999
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 1207.449676,
+        "finding_id": "015",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_11-59-49_o3_temp0.0_2023-07-pooltogether.metadata.json",
+        "project_name": "2023-07-pooltogether",
+        "total_cost_usd": 0.795988
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 1318.330333,
+        "finding_id": "032",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_12-37-16_o3_temp0.0_2022-06-putty.metadata.json",
+        "project_name": "2022-06-putty",
+        "total_cost_usd": 0.684578
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 957.07869,
+        "finding_id": "018",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_17-10-05_o3_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.771188
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 1293.026124,
+        "finding_id": "039",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_17-30-16_o3_temp0.0_2024-03-axis-finance.metadata.json",
+        "project_name": "2024-03-axis-finance",
+        "total_cost_usd": 1.0308220000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 877.489862,
+        "finding_id": "042",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_17-54-03_o3_temp0.0_2025-07-cap.metadata.json",
+        "project_name": "2025-07-cap",
+        "total_cost_usd": 0.6320819999999999
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 894.233379,
+        "finding_id": "048",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_18-15-38_o3_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.8722499999999999
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 905.233516,
+        "finding_id": "049",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_18-30-32_o3_temp0.0_2023-08-cooler.metadata.json",
+        "project_name": "2023-08-cooler",
+        "total_cost_usd": 0.6591520000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 885.354983,
+        "finding_id": "070",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_18-57-58_o3_temp0.0_2024-08-ph.metadata.json",
+        "project_name": "2024-08-ph",
+        "total_cost_usd": 0.610978
+      }
+    ],
+    "aborted_max_cost": [],
+    "other_error": [],
+    "success": [
+      {
+        "execution_time_seconds": 791.327898,
+        "finding_id": "003",
+        "iteration_count": 6,
+        "metadata_file": "2025-10-31_11-03-16_o3_temp0.0_2023-07-pooltogether.metadata.json",
+        "project_name": "2023-07-pooltogether",
+        "total_cost_usd": 0.4057320000000001
+      },
+      {
+        "execution_time_seconds": 1039.013089,
+        "finding_id": "020",
+        "iteration_count": 9,
+        "metadata_file": "2025-10-31_12-19-57_o3_temp0.0_2023-12-dodo-gsp.metadata.json",
+        "project_name": "2023-12-dodo-gsp",
+        "total_cost_usd": 0.518008
+      },
+      {
+        "execution_time_seconds": 228.489918,
+        "finding_id": "001",
+        "iteration_count": 3,
+        "metadata_file": "2025-10-31_17-06-16_o3_temp0.0_2024-06-size.metadata.json",
+        "project_name": "2024-06-size",
+        "total_cost_usd": 0.16204
+      },
+      {
+        "execution_time_seconds": 254.582735,
+        "finding_id": "033",
+        "iteration_count": 4,
+        "metadata_file": "2025-10-31_17-26-02_o3_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.19984000000000002
+      },
+      {
+        "execution_time_seconds": 133.902088,
+        "finding_id": "041",
+        "iteration_count": 2,
+        "metadata_file": "2025-10-31_17-51-49_o3_temp0.0_2024-03-axis-finance.metadata.json",
+        "project_name": "2024-03-axis-finance",
+        "total_cost_usd": 0.078962
+      },
+      {
+        "execution_time_seconds": 417.306708,
+        "finding_id": "046",
+        "iteration_count": 9,
+        "metadata_file": "2025-10-31_18-08-41_o3_temp0.0_2023-05-xeth.metadata.json",
+        "project_name": "2023-05-xeth",
+        "total_cost_usd": 0.32600799999999996
+      },
+      {
+        "execution_time_seconds": 169.679289,
+        "finding_id": "051",
+        "iteration_count": 3,
+        "metadata_file": "2025-10-31_18-45-38_o3_temp0.0_2023-09-centrifuge.metadata.json",
+        "project_name": "2023-09-centrifuge",
+        "total_cost_usd": 0.12468200000000002
+      },
+      {
+        "execution_time_seconds": 124.108497,
+        "finding_id": "054",
+        "iteration_count": 2,
+        "metadata_file": "2025-10-31_18-48-27_o3_temp0.0_2022-05-cally.metadata.json",
+        "project_name": "2022-05-cally",
+        "total_cost_usd": 0.078732
+      },
+      {
+        "execution_time_seconds": 186.952741,
+        "finding_id": "058",
+        "iteration_count": 3,
+        "metadata_file": "2025-10-31_18-50-31_o3_temp0.0_2022-06-putty.metadata.json",
+        "project_name": "2022-06-putty",
+        "total_cost_usd": 0.142416
+      },
+      {
+        "execution_time_seconds": 259.84907,
+        "finding_id": "066",
+        "iteration_count": 4,
+        "metadata_file": "2025-10-31_18-53-38_o3_temp0.0_2023-11-kelp.metadata.json",
+        "project_name": "2023-11-kelp",
+        "total_cost_usd": 0.187558
+      },
+      {
+        "execution_time_seconds": 321.808291,
+        "finding_id": "077",
+        "iteration_count": 3,
+        "metadata_file": "2025-10-31_19-12-44_o3_temp0.0_2024-02-ai-arena.metadata.json",
+        "project_name": "2024-02-ai-arena",
+        "total_cost_usd": 0.200162
+      },
+      {
+        "execution_time_seconds": 1151.137731,
+        "finding_id": "091",
+        "iteration_count": 10,
+        "metadata_file": "2025-10-31_19-18-05_o3_temp0.0_2023-07-basin.metadata.json",
+        "project_name": "2023-07-basin",
+        "total_cost_usd": 0.830854
+      },
+      {
+        "execution_time_seconds": 190.019075,
+        "finding_id": "098",
+        "iteration_count": 3,
+        "metadata_file": "2025-10-31_19-37-17_o3_temp0.0_2022-05-cally.metadata.json",
+        "project_name": "2022-05-cally",
+        "total_cost_usd": 0.13686399999999999
+      }
+    ]
+  },
+  "directory": "/mnt/ssd2/vivi/SolidityStrikeHive-private/results/workflow/eval_workflow_baseline_o3_rerun_20251031_110316/2025-10-31_11-03-16_workflow-baseline_o3_temp0.0",
+  "summary": {
+    "aborted_max_attempts": 10,
+    "aborted_max_cost": 0,
+    "other_error": 0,
+    "success": 13,
+    "total_findings": 23
+  }
+}

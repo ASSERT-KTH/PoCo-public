@@ -1,0 +1,245 @@
+{
+  "details": {
+    "aborted_max_attempts": [
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 830.46116,
+        "finding_id": "001",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_14-23-36_glm_4_6_temp0.0_2024-06-size.metadata.json",
+        "project_name": "2024-06-size",
+        "total_cost_usd": 0.10067575000000002
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 330.615371,
+        "finding_id": "003",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_14-37-26_glm_4_6_temp0.0_2023-07-pooltogether.metadata.json",
+        "project_name": "2023-07-pooltogether",
+        "total_cost_usd": 0.12747175
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 346.230351,
+        "finding_id": "008",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_14-42-57_glm_4_6_temp0.0_2023-09-centrifuge.metadata.json",
+        "project_name": "2023-09-centrifuge",
+        "total_cost_usd": 0.10510649999999998
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 291.19934,
+        "finding_id": "009",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_14-48-43_glm_4_6_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.11638325000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 418.162519,
+        "finding_id": "015",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_14-53-35_glm_4_6_temp0.0_2023-07-pooltogether.metadata.json",
+        "project_name": "2023-07-pooltogether",
+        "total_cost_usd": 0.13685975
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 325.137441,
+        "finding_id": "018",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-00-33_glm_4_6_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.10459449999999999
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 285.155098,
+        "finding_id": "020",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-05-58_glm_4_6_temp0.0_2023-12-dodo-gsp.metadata.json",
+        "project_name": "2023-12-dodo-gsp",
+        "total_cost_usd": 0.0740005
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 328.848443,
+        "finding_id": "032",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-10-43_glm_4_6_temp0.0_2022-06-putty.metadata.json",
+        "project_name": "2022-06-putty",
+        "total_cost_usd": 0.10506599999999999
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 246.472369,
+        "finding_id": "033",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-16-12_glm_4_6_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.096068
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 281.287251,
+        "finding_id": "039",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-20-18_glm_4_6_temp0.0_2024-03-axis-finance.metadata.json",
+        "project_name": "2024-03-axis-finance",
+        "total_cost_usd": 0.09629425000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 352.080753,
+        "finding_id": "041",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-25-00_glm_4_6_temp0.0_2024-03-axis-finance.metadata.json",
+        "project_name": "2024-03-axis-finance",
+        "total_cost_usd": 0.08266350000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 407.861615,
+        "finding_id": "042",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-30-52_glm_4_6_temp0.0_2025-07-cap.metadata.json",
+        "project_name": "2025-07-cap",
+        "total_cost_usd": 0.08627175000000001
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 328.688713,
+        "finding_id": "046",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-37-40_glm_4_6_temp0.0_2023-05-xeth.metadata.json",
+        "project_name": "2023-05-xeth",
+        "total_cost_usd": 0.08834
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 333.592745,
+        "finding_id": "048",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-43-08_glm_4_6_temp0.0_2023-04-caviar.metadata.json",
+        "project_name": "2023-04-caviar",
+        "total_cost_usd": 0.1178905
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 335.13955,
+        "finding_id": "049",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-48-42_glm_4_6_temp0.0_2023-08-cooler.metadata.json",
+        "project_name": "2023-08-cooler",
+        "total_cost_usd": 0.089227
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 440.160067,
+        "finding_id": "051",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_15-54-17_glm_4_6_temp0.0_2023-09-centrifuge.metadata.json",
+        "project_name": "2023-09-centrifuge",
+        "total_cost_usd": 0.1001675
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 492.545593,
+        "finding_id": "058",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_16-03-29_glm_4_6_temp0.0_2022-06-putty.metadata.json",
+        "project_name": "2022-06-putty",
+        "total_cost_usd": 0.10592700000000002
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 550.081609,
+        "finding_id": "066",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_16-11-42_glm_4_6_temp0.0_2023-11-kelp.metadata.json",
+        "project_name": "2023-11-kelp",
+        "total_cost_usd": 0.105683
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 352.080759,
+        "finding_id": "070",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_16-20-52_glm_4_6_temp0.0_2024-08-ph.metadata.json",
+        "project_name": "2024-08-ph",
+        "total_cost_usd": 0.07922825
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 384.31279,
+        "finding_id": "077",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_16-26-44_glm_4_6_temp0.0_2024-02-ai-arena.metadata.json",
+        "project_name": "2024-02-ai-arena",
+        "total_cost_usd": 0.06950975
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 434.89598,
+        "finding_id": "091",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_16-33-08_glm_4_6_temp0.0_2023-07-basin.metadata.json",
+        "project_name": "2023-07-basin",
+        "total_cost_usd": 0.109672
+      },
+      {
+        "error_message": "Max tool calls exceeded",
+        "execution_time_seconds": 456.363279,
+        "finding_id": "098",
+        "iteration_count": 11,
+        "max_messages_exceeded": true,
+        "metadata_file": "2025-10-31_16-40-23_glm_4_6_temp0.0_2022-05-cally.metadata.json",
+        "project_name": "2022-05-cally",
+        "total_cost_usd": 0.0830225
+      }
+    ],
+    "aborted_max_cost": [],
+    "other_error": [
+      {
+        "execution_time_seconds": 111.772757,
+        "finding_id": "054",
+        "iteration_count": 1,
+        "metadata_file": "2025-10-31_16-01-37_glm_4_6_temp0.0_2022-05-cally.metadata.json",
+        "project_name": "2022-05-cally"
+      }
+    ],
+    "success": []
+  },
+  "directory": "/mnt/ssd2/vivi/SolidityStrikeHive-private/results/workflow/eval_workflow_baseline_glm_4_6_rerun_20251031_142336/2025-10-31_14-23-36_workflow-baseline_glm_4_6_temp0.0",
+  "summary": {
+    "aborted_max_attempts": 22,
+    "aborted_max_cost": 0,
+    "other_error": 1,
+    "success": 0,
+    "total_findings": 23
+  }
+}

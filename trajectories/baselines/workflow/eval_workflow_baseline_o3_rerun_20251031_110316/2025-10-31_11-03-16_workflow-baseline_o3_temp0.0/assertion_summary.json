@@ -1,0 +1,500 @@
+{
+  "overview": {
+    "1": [
+      "015::poc_files/dataset/evaluation/findings/015/2023-07-pooltogether/vault/test/exploit/ExploitTest.t.sol",
+      "032::poc_files/dataset/evaluation/findings/032/2022-06-putty/contracts/test/exploit/ExploitTest.t.sol",
+      "039::poc_files/dataset/evaluation/findings/039/2024-03-axis-finance/moonraker/test/exploit/ExploitTest.t.sol",
+      "046::poc_files/dataset/evaluation/findings/046/2023-05-xeth/test/exploit/ExploitTest.t.sol",
+      "051::poc_files/dataset/evaluation/findings/051/2023-09-centrifuge/test/exploit/ExploitTest.t.sol",
+      "091::poc_files/dataset/evaluation/findings/091/2023-07-basin/test/exploit/ExploitTest.t.sol"
+    ],
+    "2": [
+      "041::poc_files/dataset/evaluation/findings/041/2024-03-axis-finance/moonraker/test/exploit/ExploitTest.t.sol",
+      "048::poc_files/dataset/evaluation/findings/048/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+      "049::poc_files/dataset/evaluation/findings/049/2023-08-cooler/Cooler/src/test/exploit/ExploitTest.t.sol"
+    ],
+    "3": [
+      "001::poc_files/dataset/evaluation/findings/001/2024-06-size/test/exploit/ExploitTest.t.sol",
+      "008::poc_files/dataset/evaluation/findings/008/2023-09-centrifuge/test/exploit/ExploitTest.t.sol",
+      "009::poc_files/dataset/evaluation/findings/009/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+      "020::poc_files/dataset/evaluation/findings/020/2023-12-dodo-gsp/dodo-gassaving-pool/test/exploit/ExploitTest.t.sol",
+      "033::poc_files/dataset/evaluation/findings/033/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+      "042::poc_files/dataset/evaluation/findings/042/2025-07-cap/cap-contracts/test/exploit/ExploitTest.t.sol",
+      "058::poc_files/dataset/evaluation/findings/058/2022-06-putty/contracts/test/exploit/ExploitTest.t.sol",
+      "066::poc_files/dataset/evaluation/findings/066/2023-11-kelp/test/exploit/ExploitTest.t.sol",
+      "070::poc_files/dataset/evaluation/findings/070/2024-08-ph/test/exploit/ExploitTest.t.sol"
+    ],
+    "5": [
+      "003::poc_files/dataset/evaluation/findings/003/2023-07-pooltogether/vault/test/exploit/ExploitTest.t.sol",
+      "054::poc_files/dataset/evaluation/findings/054/2022-05-cally/contracts/test/exploit/ExploitTest.t.sol",
+      "077::poc_files/dataset/evaluation/findings/077/2024-02-ai-arena/test/exploit/ExploitTest.t.sol",
+      "098::poc_files/dataset/evaluation/findings/098/2022-05-cally/contracts/test/exploit/ExploitTest.t.sol"
+    ],
+    "6": [
+      "018::poc_files/dataset/evaluation/findings/018/2023-04-caviar/test/exploit/ExploitTest.t.sol"
+    ]
+  },
+  "totals": {
+    "assertions": {
+      "assertTrue": 4,
+      "assertEq": 43,
+      "assertLt": 3,
+      "assertGt": 7,
+      "expectRevert": 8
+    },
+    "total_assertions": 65,
+    "findings_with_files": 23,
+    "findings_missing_files": 0
+  },
+  "scanned_at": "2025-10-31T22:42:24.654072+00:00",
+  "root": "/mnt/ssd2/vivi/SolidityStrikeHive-private/results/workflow/eval_workflow_baseline_o3_rerun_20251031_110316/2025-10-31_11-03-16_workflow-baseline_o3_temp0.0",
+  "assertions_tracked": [
+    "assert",
+    "assertTrue",
+    "assertFalse",
+    "assertEq",
+    "assertNotEq",
+    "assertLt",
+    "assertLe",
+    "assertGt",
+    "assertGe",
+    "assertEqDecimal",
+    "assertApproxEqAbs",
+    "assertApproxEqRel",
+    "assertBytesEq",
+    "assertUintEq",
+    "assertIntEq",
+    "assertAddressEq",
+    "assertBoolEq",
+    "expectRevert",
+    "expectEmit",
+    "expectCall",
+    "expectCallMinGas",
+    "expectSafeMemory",
+    "expectStorageAccess",
+    "expectRecordLogs",
+    "expectNoRevert"
+  ],
+  "files_scanned": 23,
+  "findings": [
+    {
+      "finding_id": "001",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/001/2024-06-size/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 2,
+            "expectRevert": 1
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 2,
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "003",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/003/2023-07-pooltogether/vault/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 5
+          },
+          "total_assertions": 5
+        }
+      ],
+      "assertions": {
+        "assertEq": 5
+      },
+      "missing_files": false,
+      "total_assertions": 5
+    },
+    {
+      "finding_id": "008",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/008/2023-09-centrifuge/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 1,
+            "assertGt": 1,
+            "expectRevert": 1
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 1,
+        "assertGt": 1,
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "009",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/009/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 3
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 3
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "015",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/015/2023-07-pooltogether/vault/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "expectRevert": 1
+          },
+          "total_assertions": 1
+        }
+      ],
+      "assertions": {
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 1
+    },
+    {
+      "finding_id": "018",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/018/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 6
+          },
+          "total_assertions": 6
+        }
+      ],
+      "assertions": {
+        "assertEq": 6
+      },
+      "missing_files": false,
+      "total_assertions": 6
+    },
+    {
+      "finding_id": "020",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/020/2023-12-dodo-gsp/dodo-gassaving-pool/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 1,
+            "assertGt": 1,
+            "expectRevert": 1
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 1,
+        "assertGt": 1,
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "032",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/032/2022-06-putty/contracts/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "expectRevert": 1
+          },
+          "total_assertions": 1
+        }
+      ],
+      "assertions": {
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 1
+    },
+    {
+      "finding_id": "033",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/033/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertTrue": 1,
+            "assertEq": 1,
+            "assertLt": 1
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertTrue": 1,
+        "assertEq": 1,
+        "assertLt": 1
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "039",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/039/2024-03-axis-finance/moonraker/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "expectRevert": 1
+          },
+          "total_assertions": 1
+        }
+      ],
+      "assertions": {
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 1
+    },
+    {
+      "finding_id": "041",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/041/2024-03-axis-finance/moonraker/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 2
+          },
+          "total_assertions": 2
+        }
+      ],
+      "assertions": {
+        "assertEq": 2
+      },
+      "missing_files": false,
+      "total_assertions": 2
+    },
+    {
+      "finding_id": "042",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/042/2025-07-cap/cap-contracts/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 1,
+            "assertGt": 2
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 1,
+        "assertGt": 2
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "046",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/046/2023-05-xeth/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "expectRevert": 1
+          },
+          "total_assertions": 1
+        }
+      ],
+      "assertions": {
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 1
+    },
+    {
+      "finding_id": "048",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/048/2023-04-caviar/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertLt": 1,
+            "assertGt": 1
+          },
+          "total_assertions": 2
+        }
+      ],
+      "assertions": {
+        "assertLt": 1,
+        "assertGt": 1
+      },
+      "missing_files": false,
+      "total_assertions": 2
+    },
+    {
+      "finding_id": "049",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/049/2023-08-cooler/Cooler/src/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 1,
+            "assertGt": 1
+          },
+          "total_assertions": 2
+        }
+      ],
+      "assertions": {
+        "assertEq": 1,
+        "assertGt": 1
+      },
+      "missing_files": false,
+      "total_assertions": 2
+    },
+    {
+      "finding_id": "051",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/051/2023-09-centrifuge/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "expectRevert": 1
+          },
+          "total_assertions": 1
+        }
+      ],
+      "assertions": {
+        "expectRevert": 1
+      },
+      "missing_files": false,
+      "total_assertions": 1
+    },
+    {
+      "finding_id": "054",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/054/2022-05-cally/contracts/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertTrue": 1,
+            "assertEq": 4
+          },
+          "total_assertions": 5
+        }
+      ],
+      "assertions": {
+        "assertTrue": 1,
+        "assertEq": 4
+      },
+      "missing_files": false,
+      "total_assertions": 5
+    },
+    {
+      "finding_id": "058",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/058/2022-06-putty/contracts/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 3
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 3
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "066",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/066/2023-11-kelp/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 1,
+            "assertLt": 1,
+            "assertGt": 1
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertEq": 1,
+        "assertLt": 1,
+        "assertGt": 1
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "070",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/070/2024-08-ph/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertTrue": 1,
+            "assertEq": 2
+          },
+          "total_assertions": 3
+        }
+      ],
+      "assertions": {
+        "assertTrue": 1,
+        "assertEq": 2
+      },
+      "missing_files": false,
+      "total_assertions": 3
+    },
+    {
+      "finding_id": "077",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/077/2024-02-ai-arena/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 5
+          },
+          "total_assertions": 5
+        }
+      ],
+      "assertions": {
+        "assertEq": 5
+      },
+      "missing_files": false,
+      "total_assertions": 5
+    },
+    {
+      "finding_id": "091",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/091/2023-07-basin/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertTrue": 1
+          },
+          "total_assertions": 1
+        }
+      ],
+      "assertions": {
+        "assertTrue": 1
+      },
+      "missing_files": false,
+      "total_assertions": 1
+    },
+    {
+      "finding_id": "098",
+      "files": [
+        {
+          "path": "poc_files/dataset/evaluation/findings/098/2022-05-cally/contracts/test/exploit/ExploitTest.t.sol",
+          "assertions": {
+            "assertEq": 5
+          },
+          "total_assertions": 5
+        }
+      ],
+      "assertions": {
+        "assertEq": 5
+      },
+      "missing_files": false,
+      "total_assertions": 5
+    }
+  ]
+}
