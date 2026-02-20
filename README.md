@@ -1,24 +1,44 @@
+# PoCo: Agentic PoC Exploit Generation for Smart Contracts
+
 <div align="center">
 
-  <h1>PoCo: Agentic Proof-of-Concept Exploit Generation for Smart Contracts</h1>
-  <h3>
-    Exeperiment Results
-  </h3>
 
-  <p>
-    <a href="https://arxiv.org/abs/2511.02780"><b>📄 PoCo Paper </b></a> &nbsp;|&nbsp;
-    <a href="https://github.com/ASSERT-KTH/Proof-of-Patch"><b>📊 Proof of Patch Dataset</b></a>
-  </p>
+### 📄 [PoCo Paper](https://arxiv.org/abs/2511.02780) • 🗂️ [Proof-of-Patch Dataset](https://github.com/ASSERT-KTH/Proof-of-Patch)
 
-  <p>
-    <strong>Repository contents:</strong> Experiment trajectories, evaluation reports, and configuration files for PoCo agentic exploit generation.
-  </p>
+<p align="center">
+  <img src="fig/PoCo.png" alt="PoCo overview" width="700"/>
+</p>
 
 </div>
 
+
+### 🔎 Repository Contents
+
+This repository contains the experimental artifacts for PoCo:
+
+- Agent execution trajectories  
+- Evaluation results  
+- Configuration files  
+
+
+### 🔐 Access
+
+Access to the full PoCo implementation is available upon request:
+
+- vivia [at] kth.se  
+- sofbob [at] kth.se  
+
 ---
 
-## Access
+### 📚 Citation
 
-If you are interested in gaining access to the PoCo implementation, please contact  
-<b>vivia [at] kth.se</b>
+If you use PoCo or the Proof-of-Patch dataset in your work, please cite:
+
+```bibtex
+@article{anderssonbobadilla2025poco,
+  title={PoCo: Agentic Proof-of-Concept Exploit Generation for Smart Contracts},
+  author={Andersson, Vivi and Bobadilla, Sofia and Hobbelhagen, Harald and Monperrus, Martin},
+  journal={arXiv preprint arXiv:2511.02780},
+  year={2025}
+}
+```
